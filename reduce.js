@@ -1,10 +1,26 @@
- const numbers =[1,2,3,4,5,6,7,8,9,11,345,65432,];
- const max = numbers.reduce(callback,-Infinity);
- function callback(accumulator,value,) {
-    if(accumulator > value){
-        return accumulator;
-    } else {
-        return value;
-    }
-    }
- console.log(max);
+const store = [
+    {
+        product: 'laptop',
+        value: 1000,
+        count: 3
+    },
+    {
+        product: 'desktop',
+        value: 7000,
+        count: 3
+    },
+    {
+        product: 'mobile',
+        value: 17000,
+        count: 8
+    },
+    {
+        product: 'air buds',
+        value: 700,
+        count: 10
+    },
+];
+
+const totalValueStore = store.reduce((acc, item) => acc + (item.value * item.count), 0);
+
+console.log(totalValueStore);  // Corrected calculation
