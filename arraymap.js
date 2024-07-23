@@ -1,8 +1,21 @@
-const numbers = [1,2,3,4,5];
-
-const numbersDouble =numbers.map(multiply);
-
-function  multiply(value,index,arr) {
-    return value * index;
+const products = [
+{
+    name:'laptop',
+    price:10000,
+    color:'black',
+    count:5
+},{
+    name:'desktop',
+    price:20000,
+    count:2
+},{
+    name:'phone',
+    price:5000,
+    count:10
 }
-console.log(numbersDouble);
+];
+
+const totalProductValue =products.map(item => item.price *item.count );
+
+
+console.log(totalProductValue);
