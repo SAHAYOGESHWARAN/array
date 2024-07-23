@@ -1,7 +1,17 @@
-const numbers =[1,2,3,4,5,6,];
-const even = numbers.filter(isEven)
+const people=[
+    {
+        name:'saha',
+        age:21
+    },
+    {
+        name:'gokul',
+        age:18
+    },
+    {
+        name:'stepan',
+        age:10
 
-function isEven(value){
-    return value % 2 === 0;
-}
-console.log(even);
+    }
+];
+const adults = people.filter(person => person.age >=18);
+console.log(adults);
