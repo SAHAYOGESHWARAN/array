@@ -1,17 +1,6 @@
-const people=[
-    {
-        name:'saha',
-        age:21
-    },
-    {
-        name:'gokul',
-        age:18
-    },
-    {
-        name:'stepan',
-        age:10
+const numbers = [1,2,3,2,1,3,3,5,4,6,];
 
-    }
-];
-const adults = people.filter(person => person.age >=18);
-console.log(adults);
+const nums =numbers.filter((value,index,arr)=>{
+    return arr.indexOf(value)===index;
+});
+console.log(nums);
