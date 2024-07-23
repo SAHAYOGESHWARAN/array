@@ -2,15 +2,16 @@ const a =[1,2,3];
 const b = [4,5,6];
 const d =[7,8,9];
 
-const c = a.concat(b,d);
+const c = a.concat();
 console.log(c); 
-console.log(a); 
-console.log(b);
- console.log(d); 
-
-
- // output 
- //[1, 2, 3 ]
- //[ 4, 5, 6 ]
- //[ 7, 8, 9 ]
+c.push(4);
+console.log(c); 
+console.log(a);
  
+
+
+ 
+ //output
+ //[1, 2, 3 ]
+ //[ 1, 2, 3, 4 ]
+ //[ 1, 2, 3 ]
