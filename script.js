@@ -1,10 +1,14 @@
 // .for each 
-const numbers =[1,2,3,4,5,10,15,25];
-let sum =0;
+const letters =['a','b','c','d',];
+let count ={};
 
 
-numbers.forEach(item=> {
-    sum += item;
+letters.forEach(item=> {
+   if(count[item]) {
+    count[item] ++;
+   } else {
+    count[item] = 1;
+   }
    
 });
-console.log(sum);
+console.log(count);
