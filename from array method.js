@@ -1,9 +1,9 @@
-const numbers =[1,2,3,4,4,5,2,3,2,1,3,5];
+const friends =['saha','gokul','stepan','vetha','abi'];
 
-const res = Array.from(new Set(numbers));
+const res = Array.from(new Set(friends));
 console.log(res);
 
 
 
 //output
-//[1,2,3,4,5]
+// [ 'saha', 'gokul', 'stepan', 'vetha', 'abi' ]
