@@ -1,11 +1,9 @@
-const str ='1234567';
+const numbers =[1,2,3,4,4,5,2,3,2,1,3,5];
 
-//[1,2,3,4,5,6,7]
-
-const res = Array.from(str,Number);
-
+const res = Array.from(new Set(numbers));
 console.log(res);
 
 
+
 //output
-//[ 1, 2, 3, 4, 5, 6, 7 ]
+//[1,2,3,4,5]
