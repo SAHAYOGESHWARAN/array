@@ -1,4 +1,4 @@
-const numbers = [1,2,3,4,5];
+const numbers = [1, 2, 4, 3, 5];
 
  const res = numbers.findIndex(findThree);
 
@@ -10,4 +10,4 @@ function findThree(value){
 console.log(res);
 
 //output
-// 2
+// 3 
