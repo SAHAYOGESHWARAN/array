@@ -1,9 +1,11 @@
-const numbers = [1,2,3,4,5];
+const str ='coding is fun!';
 
-const newArr =[...numbers].reverse();
-console.log(numbers);
-console.log(newArr);
+const res = str
+.split(' ')
+.reverse()
+.join(' ');
+console.log(res)
+
 
 //output
-//[ 1, 2, 3, 4, 5 ]
-//[ 5, 4, 3, 2, 1 ]
+//fun! is coding
