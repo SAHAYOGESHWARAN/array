@@ -1,19 +1,10 @@
-const persons =[
-    {
-        name: 'saha'
-    },
-    {
-        name:'gokul'
-    },
-    {
-        name:'abi'
-    },
-    {
-        name:'stepan'
-    },
+const arrys =[
+   [1,2,3],
+   [4,5,6],
+   [7,8,9]
 ];
 
-const res = persons.every(person => person.name !== undefined);
+const res = arrys.every(arr => Array.isArray(arr));
 console.log(res);
 
 
