@@ -1,7 +1,7 @@
  const numbers =[1,2,3];
 
- numbers.shift();
- console.log(numbers);
+ const firstItem = numbers.shift();
+ console.log(firstItem);
 
  //output
- // [ 2, 3 ]
+ // [ 1 ]
