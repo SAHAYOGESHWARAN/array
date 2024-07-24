@@ -10,13 +10,13 @@ const persons =[
     age:18
 }
 ];
-const res = persons.find(findFlorin)
+const age = persons.find(findFlorin).age;
 function findFlorin(person){
     return person.name === 'saha';
     
 }
 
-console.log(res);
+console.log(age);
 
 //output
-//{ name: 'saha', age: 26 }
+//{  age: 26 }
