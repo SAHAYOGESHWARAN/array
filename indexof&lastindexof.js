@@ -1,13 +1,8 @@
-const names =['saha','gokul','abi'];
+const names =['saha','gokul','abi','abi','abi'];
 
-const idx = names.indexOf('abi');
-
-if(idx > -1) {
-    console.log('yey, we  have abi');
-    } else {
-        console.log('no abi');
-}
+const idx = names.lastIndexOf('abi');
+console.log(idx);
 
 
 //output
-//yey, we  have abi
+//3
