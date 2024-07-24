@@ -1,11 +1,30 @@
-const numbers =[1,2,3,4,5];
+const persons =[{
+    name:'saha',
+    age: 8
+},{
+    name:'gokul',
+    age:2
+},{
+    name:'vetha',
+    age:8
+},
+{
+    name:'abi',
+    age:6
+},
+{
+    name:'stepan',
+    age:10
+}];
 
-const res = numbers.some(greaterThanFour);
+const res = persons.some(isAdult);
 
-function greaterThanFour(item){
-    return item > 4;
+function isAdult(person){
+    return person.age>= 18;
 }
+
 console.log(res);
 
+
 //output
-// true
+//false  // the age is less all the persons
