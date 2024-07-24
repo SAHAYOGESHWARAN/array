@@ -1,15 +1,21 @@
-const numbers = [-1,1,2,3,4,5,];
+const persons =[
+    {
+        name: 'saha'
+    },
+    {
+        name:'gokul'
+    },
+    {
+        name:'abi'
+    },
+    {
+        name:'stepan'
+    },
+];
 
-const res =numbers.every(isPositive);
-
-
-function isPositive(item,index,arr){
-    return item > 0;
-
-}
-
+const res = persons.every(person => person.name !== undefined);
 console.log(res);
 
 
 //output
-// false
+//true
