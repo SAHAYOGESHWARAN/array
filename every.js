@@ -1,4 +1,4 @@
-const numbers = [1,2,3,4,5,];
+const numbers = [-1,1,2,3,4,5,];
 
 const res =numbers.every(isPositive);
 
@@ -12,4 +12,4 @@ console.log(res);
 
 
 //output
-// true
+// false
