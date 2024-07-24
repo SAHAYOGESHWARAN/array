@@ -5,5 +5,5 @@ console.log(jsonObj);
 
 
 
-
+//output
 // {name: "saha", age: 20}
